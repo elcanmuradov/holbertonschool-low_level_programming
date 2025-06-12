@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
+ * File - 0-positive_or_negative.c
  * main - Determines if a number is positive, negative, or zero.
  * Return: 0 (Success)
  */
-int main(void)
+int main()
 {
 	int n;
 
@@ -24,5 +25,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	return (0);
+	return 0;
 }
