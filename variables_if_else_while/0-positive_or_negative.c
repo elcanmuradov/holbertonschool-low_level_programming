@@ -7,7 +7,7 @@
  * main - Determines if a number is positive, negative, or zero.
  * Return: 0 (Success)
  */
-int main()
+int main(void)
 {
 	int n;
 
@@ -25,5 +25,5 @@ int main()
 	{
 		printf("%d is negative\n", n);
 	}
-	return 0;
+	return (0);
 }
