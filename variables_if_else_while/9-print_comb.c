@@ -1,14 +1,16 @@
 /*
 * File: 7-print_tebahplat.c
 * Auth: Your Name
-* Desc: Prints all numbers seperated with space
+* Desc: Prints all  alphabet charecters reversed , followed by a new line.
 */
+
 #include <stdio.h>
 #include <unistd.h>
 
-/*
- *main - Entry pint
- *Return : always 0 (Success)
+/**
+* main - Entry point
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
