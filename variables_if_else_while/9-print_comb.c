@@ -6,6 +6,10 @@
 #include <stdio.h>
 #include <unistd.h>
 
+/*
+ *main - Entry pint
+ *Return : always 0 (Success)
+ * */
 int main(void)
 {
 int n = '0';
