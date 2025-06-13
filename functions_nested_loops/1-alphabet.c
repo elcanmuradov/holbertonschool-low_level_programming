@@ -3,8 +3,8 @@
 /**
  * print_alphabet - Prints the alphabet in lowercase, followed by a new line.
  *
- * Description: This function loops through all lowercase letters from 'a' to 'z'
- *              and prints each one using _putchar. After printing all letters,
+ * Description: This function lowercase letters from 'a' to 'z'
+ *              and prints eae using _putchar. After printing all letters,
  *              it prints a new line character.
  */
 void print_alphabet(void)
