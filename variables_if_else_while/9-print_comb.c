@@ -3,7 +3,7 @@
 * Auth: Your Name
 * Desc: Prints all  alphabet charecters reversed , followed by a new line.
 */
-
+#include <stdio.h>
 #include <unistd.h>
 
 int main(void)
