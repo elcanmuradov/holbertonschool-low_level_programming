@@ -27,8 +27,8 @@ _putchar(' ');
 _putchar(b + '0');
 if (k != 9)
 {
-_putchar(' ');
 _putchar(',');
+_putchar(' ');
 }
 }
 _putchar('\n');
