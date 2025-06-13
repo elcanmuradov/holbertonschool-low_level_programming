@@ -10,7 +10,12 @@
 void print_alphabet(void)
 {
 char letter;
-for (int i = 0 ; i < 10 ; i++)
+int i;
+
+i = 0;
+
+while (i <10 )
+{
 {
 for (letter = 'a'; letter <= 'z'; letter++)
 {
@@ -18,4 +23,5 @@ _putchar(letter);
 }
 _putchar('\n');
 }
+i++;
 }
