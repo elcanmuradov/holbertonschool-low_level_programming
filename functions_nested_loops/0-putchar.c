@@ -1,36 +1,21 @@
-/*
- * File: 0-putchar.c
- * Auth: Your Name
- * Desc: Prints "_putchar" followed by a new line.
- */
-
-#include <unistd.h>
-
-/**
- * _putchar - writes a character to stdout
- * @c: The character to print
- * Return: On success 1, on error -1.
- */
-int _putchar(char c)
-{
-    return (write(1, &c, 1));
-}
+/* 0-putchar.c */
 
 /**
  * main - Entry point
- * Description: Prints "_putchar" using _putchar().
+ * Description: Prints "_putchar" followed by a new line.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    _putchar('_');
-    _putchar('p');
-    _putchar('u');
-    _putchar('t');
-    _putchar('c');
-    _putchar('h');
-    _putchar('a');
-    _putchar('r');
-    _putchar('\n');
-    return (0);
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }
+
