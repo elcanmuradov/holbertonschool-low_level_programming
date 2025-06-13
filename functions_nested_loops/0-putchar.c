@@ -1,5 +1,5 @@
 /* 0-putchar.c */
-
+#include <main.h>
 /**
  * main - Entry point
  * Description: Prints "_putchar" followed by a new line.
