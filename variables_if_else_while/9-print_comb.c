@@ -9,7 +9,7 @@
 /*
  *main - Entry pint
  *Return : always 0 (Success)
- * */
+*/
 int main(void)
 {
 int n = '0';
