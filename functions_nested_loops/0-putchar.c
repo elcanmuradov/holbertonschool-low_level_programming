@@ -1,20 +1,37 @@
 /*
-* File: 0-puthcar.c
-* Auth: Your Name
-* Desc: Prints all  alphabet charecters reversed , followed by a new line.
-*/
+ * File: 0-putchar.c
+ * Auth: Your Name
+ * Desc: Prints "_putchar" followed by a new line.
+ */
 
-#include <stdio.h>
+#include <unistd.h>
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+    return (write(1, &c, 1));
+}
+
+/**
+ * main - Entry point
+ * Description: Prints "_putchar" followed by a new line.
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-printf("__putchar");
-putchar('\n');
-return (0);
-
+    _putchar('_');
+    _putchar('p');
+    _putchar('u');
+    _putchar('t');
+    _putchar('c');
+    _putchar('h');
+    _putchar('a');
+    _putchar('r');
+    _putchar('\n');
+    return (0);
 }
