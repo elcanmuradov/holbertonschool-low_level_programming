@@ -22,7 +22,7 @@ if (letter != 'e' && letter != 'q')
 {
 putchar(letter);
 }
-letter ++;
+letter++;
 }
 putchar('\n');
 return (0);
