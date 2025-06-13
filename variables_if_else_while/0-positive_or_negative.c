@@ -1,7 +1,7 @@
 /*
  * File: 0-positive_or_negative.c
  * Auth: Your Name
- * Desc: Assigns a random number to variable n and prints whether it's positive,
+ * Desc: prints whether the number n is positive or negative
  *	negative, or zero.
  */
 
