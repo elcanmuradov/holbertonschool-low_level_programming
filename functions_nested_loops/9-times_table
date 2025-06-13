@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * times_table - Prints the last digit of a number.
  *
@@ -34,4 +34,3 @@ _putchar(',');
 _putchar('\n');
 }
 }
-
