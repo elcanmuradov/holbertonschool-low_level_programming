@@ -1,7 +1,7 @@
 /*
 * File: 7-print_tebahplat.c
 * Auth: Your Name
-* Desc: Prints all  alphabet charecters reversed , followed by a new line.
+* Desc: Prints all numbers seperated with space
 */
 #include <stdio.h>
 #include <unistd.h>
