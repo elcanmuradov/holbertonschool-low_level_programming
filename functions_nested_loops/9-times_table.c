@@ -20,7 +20,7 @@ if (c > 10)
 {
 _putchar(a + '0');
 }
-else
+else if(k != 0)
 {
 _putchar(' ');
 }
