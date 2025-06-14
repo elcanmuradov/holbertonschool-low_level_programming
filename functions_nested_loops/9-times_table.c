@@ -1,34 +1,38 @@
 #include "main.h"
+
 /**
- * times_table - Prints the last digit of a number.
+ * times_table - Prints the 9 times table, starting with 0.
  *
- *
- * Return: The value of the last digit.
+ * Description: This functiation table for 9 in a formatted manner.
  */
 void times_table(void)
 {
-int i, k, a, b, c;
-for (i = 0; i <= 9; i++)
-{
+int row, column, product;
 
-for (k = 0; k <= 9; k++)
+for (row = 0; row <= 9; row++)
 {
-c = i * k;
-a = c / 10;
-b = c % 10;
-if (c > 10)
+for (column = 0; column <= 9; column++)
 {
-_putchar(a + '0');
+product = row * column;
+
+if (column == 0)
+{
+_putchar('0' + product);
 }
-else if(k != 0)
-{
-_putchar(' ');
-}
-_putchar(b + '0');
-if (k != 9)
+else
 {
 _putchar(',');
 _putchar(' ');
+if (product < 10)
+{
+_putchar(' ');
+}
+else
+{
+_putchar('0' + (product / 10));
+}
+
+_putchar('0' + (product % 10));
 }
 }
 _putchar('\n');
