@@ -1,43 +1,33 @@
 #include "main.h"
 #include <stdio.h>
-/* print_to_98 - print the numbers to 98.
- * @n: The number.
- *
- * Return: The sum of the two integers.
+
+/**
+ * print_to_98 - Prints all natural numbers from n to 98.
+ * @n: The starting number.
  */
 void print_to_98(int n)
 {
-if (n < 98)
+if (n <= 98)
 {
-while (n != 98)
+for (; n <= 98; n++)
 {
-_putchar('0' + n/10);
-_putchar('0' + n%10);
-_putchar(',');
-_putchar(' ');
-n++;
+printf("%d", n);
+if (n != 98)
+{
+printf(", ");
 }
-_putchar('9');
-_putchar('8');
 }
-else if (n > 98)
-{
-while (n != 98)
-{
-_putchar('0' + n/10);
-_putchar('0' + n%10);
-_putchar(',');
-_putchar(' ');
-n--;
-}
-_putchar('9');
-_putchar('8');
 }
 else
 {
-_putchar('9');
-_putchar('8');
-_putchar(' ');
+for (; n >= 98; n--)
+{
+printf("%d", n);
+if (n != 98)
+{
+printf(", ");
 }
-
+}
+}
+printf("\n");
 }
