@@ -12,5 +12,6 @@ int add(int a ,int b)
 int c = a + b;
 _putchar('0' + c/10);
 _putchar('0' + c%10);
-}
+
 _putchar('\n');
+}
