@@ -1,17 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * add - Prints the 9 times table, starting with 0.
+ * add - Adds two integers.
+ * @a: The first integer.
+ * @b: The second integer.
  *
- * Description: This functilication table for 9 in a formatted manner.
+ * Return: The sum of the two integers.
  */
-
-int add(int a ,int b)
+int add(int a, int b)
 {
-int c = a + b;
-_putchar('0' + c/10);
-_putchar('0' + c%10);
-
-_putchar('\n');
+return (a + b);
 }
