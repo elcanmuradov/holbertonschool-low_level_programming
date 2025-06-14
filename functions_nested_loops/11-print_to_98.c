@@ -11,30 +11,32 @@ if (n < 98)
 {
 while (n != 98)
 {
-printf("%d, ",n);
+_putchar('0' + n/10);
+_putchar('0' + n%10);
+_putchar(',');
+_putchar(' ');
 n++;
 }
-printf("%d",98);
+_putchar('9');
+_putchar('8');
 }
 else if (n > 98)
 {
 while (n != 98)
 {
-printf("%d, ",n);
+_putchar('0' + n/10);
+_putchar('0' + n%10);
+_putchar(',');
+_putchar(' ');
 n--;
 }
-printf("%d",98);
+_putchar('9');
+_putchar('8');
 }
 else
 {
-printf("%d",98);
+_putchar('9');
+_putchar('8');
 }
 
 }
-int main() {
-   
-    print_to_98(56);
-
-    return 0;
-}
-
