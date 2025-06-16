@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * most_numbers - print the numbers
+ * more_numbers - print the numbers
  * Return: void
  *
  *
@@ -14,13 +14,13 @@ int b;
 
 for (i = 0; i < 10; i++)
 {
-for (b = 0; b <=14; b++)
+for (b = 0; b <= 14; b++)
 {
 if (b > 9)
 {
-_putchar('0' + b/10);
+_putchar('0' + b / 10);
 }
-_putchar('0' + b%10);
+_putchar('0' + b % 10);
 }
 _putchar('\n');
 }
