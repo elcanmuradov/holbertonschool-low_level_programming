@@ -8,11 +8,5 @@
 
 void _puts(char *str)
 {
-int count = 0;
-
-while (str[count] != '\0')
-{
-_putchar('%c', str[count]);
-count++;
-}
+puts(str);
 }
