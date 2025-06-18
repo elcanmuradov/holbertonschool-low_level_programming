@@ -18,10 +18,11 @@ if (i % 2 == 1)
 i++;
 }
 n = i / 2;
-
-for (n; n <= i; n++)
+while (n < i)
 {
 _putchar(str[n]);
+n++;
 }
+
 _putchar('\n');
 }
