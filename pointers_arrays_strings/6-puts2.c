@@ -15,7 +15,7 @@ while (str[i] != '\0')
 {
 i++;
 }
-while (a <= i)
+while (a < i)
 {
 _putchar(str[a]);
 a = a + 2;
