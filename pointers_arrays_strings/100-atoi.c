@@ -17,7 +17,6 @@ while (*s)
 {
 if (*s == '-')
 sign *= -1;
-else if (*s == '+')
 else if (*s >= '0' && *s <= '9')
 {
 digit_seen = 1;
