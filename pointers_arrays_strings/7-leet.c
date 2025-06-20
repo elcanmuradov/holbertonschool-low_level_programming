@@ -17,6 +17,7 @@ while (k < 20)
 if (s[i] == a[k])
 {
 s[i] = a[k + 1];
+break;
 }
 k++;
 }
