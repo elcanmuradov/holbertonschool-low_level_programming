@@ -10,7 +10,6 @@ int is_separator(char c)
 {
 int i;
 char seps[] = " \t\n,;.!?\"(){}";
-
 for (i = 0; seps[i] != '\0'; i++)
 {
 if (c == seps[i])
@@ -30,6 +29,7 @@ char *cap_string(char *str)
 int i;
 if (str[0] >= 'a' && str[0] <= 'z')
 str[0] = str[0] - ('a' - 'A');
+
 for (i = 1; str[i] != '\0'; i++)
 {
 if (is_separator(str[i - 1]) &&
