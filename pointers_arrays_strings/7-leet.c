@@ -12,7 +12,7 @@ int k = 0;
 char a[20] = "a4e3o0t7l1A4E3O0T7L1";
 while (s[i] != '\0')
 {
-while (k < 15)
+while (k < 20)
 {
 if (s[i] == a[k])
 {
