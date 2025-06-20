@@ -12,9 +12,9 @@ int b;
 int i = 0;
 while (n > 0)
 {
-b = a[i]
-a[i] = a[n - 1]
-a[n-1] = b
+b = a[i];
+a[i] = a[n - 1];
+a[n-1] = b;
 n--;
 i++;
 }
