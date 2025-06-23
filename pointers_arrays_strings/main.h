@@ -31,7 +31,7 @@ int _strcmp(char *s1, char *s2);
 char *cap_string(char *);
 void print_array(int *a, int n);
 char *leet(char *s);
-
+char *_memset(char *s, char b, unsigned int n);
 
 
 
