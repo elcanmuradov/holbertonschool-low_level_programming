@@ -16,11 +16,12 @@ while (accept[k] != '\0')
 {
 if (s[i] == accept[k])
 {
-return accept[k];
+return &s[i];
 }
 k++;
 }
 i++;
+k = 0;
 }
 return '\0';
 }
