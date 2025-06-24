@@ -1,25 +1,28 @@
 #include "main.h"
 
 /**
- * _strspn - function
+ * _strpbrk - function
  * @accept: arg1
  * @s: arg2
  * Return: count
 */
 char *_strpbrk(char *s, char *accept)
 {
-int c = 0;
+int i = 0;
 int k = 0;
-while (s[c] != '\0')
+char a;
+while (s[i] != '\0')
 {
 while (accept[k] != '\0')
 {
-if (accept[k] == s[c])
+if (s[i] == accept[k])
 {
-return (accept[k]);
+a = accept[k];
+return a;
 }
 k++;
 }
-c++;
+i++;
 }
+return '\0';
 }
