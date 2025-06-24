@@ -18,7 +18,7 @@ while (accept[k] != '\0')
 if (s[i] == accept[k])
 {
 a = accept[k];
-return a;
+return *a;
 }
 k++;
 }
