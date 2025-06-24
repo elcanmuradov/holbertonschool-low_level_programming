@@ -6,7 +6,7 @@
  * @s: arg2
  * Return: count
 */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 int c = 0;
 int k = 0;
