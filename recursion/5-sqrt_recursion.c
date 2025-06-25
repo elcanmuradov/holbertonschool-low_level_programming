@@ -1,6 +1,27 @@
 #include "main.h"
 
 /**
+ * find_sqrt - sad
+ * @a: arg1
+ * @i: arg2
+ * Return: return
+*/
+int find_sqrt(int a, int i)
+{
+if (i == a / 2)
+{
+return (-1);
+}
+else if (i * i == a)
+{
+return (i);
+}
+else
+{
+return (find_sqrt(a, i + 1));
+}
+}
+/**
  * _sqrt_recursion - function
  * @n: argdfgg1
  * Return: sfsdf
@@ -21,24 +42,3 @@ else
 return (find_sqrt(n, 2));
 }
 }
-/**
- * find_sqrt - sad
- * @a: arg1
- * @i: arg2
- * Return: return
-*/
-int find_sqrt(int a, int i)
-{
-if (i == a / 2)
-{
-return (-1);
-}
-else if (i * i == a)
-{
-return (i);
-}
-else
-{
-return (find_sqrt(a, i + 1));
-}
-
