@@ -37,3 +37,5 @@ return (0);
 else
 {
 return (checkprime(n, 2));
+}
+}
