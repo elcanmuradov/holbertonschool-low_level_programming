@@ -1,24 +1,6 @@
 #include "main.h"
 
 /**
- * is_prime_number - asd
- * @n: arg1
- * Return: 0 or funct2
-*/
-
-int is_prime_number(int n)
-{
-if (n <= 1)
-{
-return (0);
-}
-else
-{
-return (checkprime(n, 2));
-}
-}
-
-/**
  * checkprime - funct2
  * @a: arg1
  * @i: arg2
@@ -39,3 +21,19 @@ else
 return (1);
 }
 }
+
+/**
+ * is_prime_number - asd
+ * @n: arg1
+ * Return: 0 or funct
+*/
+
+int is_prime_number(int n)
+{
+if (n <= 1)
+{
+return (0);
+}
+else
+{
+return (checkprime(n, 2));
