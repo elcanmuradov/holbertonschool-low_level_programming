@@ -6,8 +6,8 @@
  * @argv: arg2
  * Return: 0
 */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-printf("%s", argv[0]);
+printf("%s\n", argv[0]);
 return (0);
 }
