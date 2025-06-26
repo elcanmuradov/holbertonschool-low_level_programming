@@ -1,23 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - funct
- * @argv: arg1
- * @argc: arg2
- * Return: 0
-*/
+ * main - Multiplies two numbers.
+ * @argc: Number of command-line arguments.
+ * @argv: Array of command-line argument strings.
+ *
+ * Return: 0 (Success), 1 (Error if not exactly two arguments).
+ */
 int main(int argc, char *argv[])
 {
-if (argc - 1 == 2)
-{
-int mul = argv[1] * argv[2];
+int num1, num2, result;
 
-printf("%d\n", mul);
-return (0);
-}
-else
+if (argc != 3)
 {
 printf("Error\n");
 return (1);
 }
+num1 = atoi(argv[1]);
+num2 = atoi(argv[2]);
+result = num1 * num2;
+
+printf("%d\n", result);
+return (0);
 }
