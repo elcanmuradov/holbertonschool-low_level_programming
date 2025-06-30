@@ -20,13 +20,10 @@ while (i < size)
 arr[i] = c;
 i++;
 }
-}
-if (size == 0 || *arr = NULL)
-{
-return (NULL);
+return (arr);
 }
 else
 {
-return (arr);
+return (NULL);
 }
 }
