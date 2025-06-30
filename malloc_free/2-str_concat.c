@@ -12,22 +12,21 @@ char *str_concat(char *s1, char *s2)
 {
 unsigned int ss1 = 0;
 unsigned int ss2 = 0;
+unsigned int i = 0;
+char *arr;
 while (s1[ss1] != '\0')
 {
-ss1+;
+ss1++;
 }
 while (s2[ss2] != '\0')
 {
-ss2+;
+ss2++;
 }
-char *arr;
 arr = malloc((ss1 + ss2 + 1) * sizeof(char));
 if (arr == NULL)
 {
 return (NULL);
 }
-unsigned int i = 0;
-
 while (i <= ss1 + ss2)
 {
 if (i <= ss1)
@@ -39,5 +38,5 @@ else
 arr[i] = s2[i-ss2];
 }
 }
-return (arr)
-	}
+return (arr);
+}
