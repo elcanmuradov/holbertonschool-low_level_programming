@@ -14,6 +14,10 @@ unsigned int ss1 = 0;
 unsigned int ss2 = 0;
 unsigned int i = 0;
 char *arr;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 while (s1[ss1] != '\0')
 {
 ss1++;
@@ -35,7 +39,7 @@ arr[i] = s1[i];
 }
 else
 {
-arr[i] = s2[i-ss1];
+arr[i] = s2[i - ss1];
 }
 i++;
 }
