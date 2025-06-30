@@ -18,7 +18,7 @@ while (str[size] != '\0')
 {
 size++;
 }
-arr = malloc((size - 1) * sizeof(char));
+arr = malloc((size + 1) * sizeof(char));
 if (arr == NULL)
 {
 return (NULL);
