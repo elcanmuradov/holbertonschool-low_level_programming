@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * create_array - function
+ * _strdup - function
  * @str: arg1
  * Return: array or NULL
 */
