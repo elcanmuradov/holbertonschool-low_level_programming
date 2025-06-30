@@ -23,7 +23,7 @@ if (arr == NULL)
 {
 return (NULL);
 }
-while (i < size)
+while (i <= size)
 {
 arr[i] = str[i];
 i++;
