@@ -15,6 +15,10 @@ if (size != 0)
 unsigned int i = 0;
 char *arr;
 arr = malloc(size * sizeof(char));
+if (arr == NULL)
+{
+return (NULL);
+}
 while (i < size)
 {
 arr[i] = c;
