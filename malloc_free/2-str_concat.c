@@ -29,13 +29,13 @@ return (NULL);
 }
 while (i <= ss1 + ss2)
 {
-if (i <= ss1)
+if (i < ss1)
 {
 arr[i] = s1[i];
 }
 else
 {
-arr[i] = s2[i-ss2];
+arr[i] = s2[i-ss1];
 }
 i++;
 }
