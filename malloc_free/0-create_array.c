@@ -10,7 +10,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-if (c != '\0')
+if (size != 0)
 {
 unsigned int i = 0;
 char *arr;
@@ -22,7 +22,7 @@ i++;
 }
 return (arr);
 }
-else 
+else
 {
 return ('\0');
 }
