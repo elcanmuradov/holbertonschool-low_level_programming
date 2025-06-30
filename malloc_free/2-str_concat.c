@@ -37,6 +37,7 @@ else
 {
 arr[i] = s2[i-ss2];
 }
+i++;
 }
 return (arr);
 }
