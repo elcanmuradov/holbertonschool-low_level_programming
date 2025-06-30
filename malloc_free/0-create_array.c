@@ -21,7 +21,7 @@ arr[i] = c;
 i++;
 }
 }
-if (size == 0 || arr = NULL)
+if (size == 0 || *arr = NULL)
 {
 return (NULL);
 }
