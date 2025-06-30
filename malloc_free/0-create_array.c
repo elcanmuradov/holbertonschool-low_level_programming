@@ -24,6 +24,6 @@ return (arr);
 }
 else
 {
-return ('\0');
+return (NULL);
 }
 }
