@@ -15,6 +15,10 @@ if (width <= 0 || height <= 0)
 return (NULL);
 }
 grid = malloc(width * height * sizeof(int));
+if (arr == NULL)
+{
+return (NULL);
+}
 while (h < height)
 {
 while (w < width)
