@@ -7,7 +7,7 @@
  * Return: array or NULL
 */
 
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 if (str != NULL)
 {
