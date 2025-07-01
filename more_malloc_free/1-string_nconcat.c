@@ -25,7 +25,7 @@ if (ss2 <= n)
 {
 n = ss2;
 }
-arr = malloc(sizeof(char) * ss1 + (sizeof(char) * n));
+arr = malloc(sizeof(char) * ss1 + (sizeof(char) * n) + 1);
 if (arr == NULL)
 {
 return (NULL);
