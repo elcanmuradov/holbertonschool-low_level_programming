@@ -38,7 +38,7 @@ arr[c] = s1[c];
 }
 else
 {
-arr[c] = s2[c - n];
+arr[c] = s2[c - ss1];
 }
 c++;
 }
