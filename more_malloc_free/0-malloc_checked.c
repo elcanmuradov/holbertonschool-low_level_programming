@@ -3,6 +3,7 @@
 /**
  * malloc_checked - function
  * @b: arg
+ * Return: void
 */
 
 void *malloc_checked(unsigned int b)
