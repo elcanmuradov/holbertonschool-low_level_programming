@@ -13,6 +13,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int ss1 = 0, ss2 = 0, c = 0;
 char *arr;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 while (s1[ss1] != '\0')
 {
 ss1++;
@@ -22,24 +26,16 @@ while (s2[ss2] != '\0')
 ss2++;
 }
 if (ss2 <= n)
-{
 n = ss2;
-}
-arr = malloc(sizeof(char) * ss1 + (sizeof(char) * n) + 1);
+arr = malloc((sizeof(char) * ss1)+(sizeof(char) * n)+1);
 if (arr == NULL)
-{
 return (NULL);
-}
 while (c < ss1 + n)
 {
 if (c < ss1)
-{
 arr[c] = s1[c];
-}
 else
-{
 arr[c] = s2[c - ss1];
-}
 c++;
 }
 arr[c] = '\0';
