@@ -40,6 +40,7 @@ else
 {
 arr[c] = s2[c - n];
 }
+c++;
 }
 return (arr);
 }
