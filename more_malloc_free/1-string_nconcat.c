@@ -42,5 +42,6 @@ arr[c] = s2[c - ss1];
 }
 c++;
 }
+arr[c] = '\0';
 return (arr);
 }
