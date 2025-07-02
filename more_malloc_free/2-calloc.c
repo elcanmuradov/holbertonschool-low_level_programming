@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 /**
  * _calloc - funct
@@ -10,7 +11,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *ptr;
-int i = 0;
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
