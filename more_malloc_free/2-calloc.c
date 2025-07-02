@@ -20,10 +20,6 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-while (i < nmemb)
-{
-ptr[i] = 0;
-i++;
-}
+memset(ptr,0,sizeof(ptr));
 return (ptr);
 }
