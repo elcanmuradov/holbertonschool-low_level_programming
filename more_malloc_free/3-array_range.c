@@ -19,7 +19,7 @@ if (arr == NULL)
 return (NULL);
 
 i = 0;
-while (i < max - min)
+while (i < max - min + 1)
 {
 arr[i] = min + i;
 i++;
