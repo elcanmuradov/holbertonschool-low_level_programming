@@ -22,7 +22,7 @@ if (ptr == NULL)
 return (NULL);
 }
 arr = (char *)ptr;
-while (i < nmemb)
+while (i < nmemb * size)
 {
 arr[i] = 0;
 i++;
