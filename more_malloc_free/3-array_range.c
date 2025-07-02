@@ -2,7 +2,10 @@
 #include <stdlib.h>
 
 /**
- *
+ * array_range - funt
+ * @min: arg1
+ * @max: arg2
+ * Return: NULL or array
 */
 
 int *array_range(int min, int max)
@@ -10,7 +13,7 @@ int *array_range(int min, int max)
 if (min > max)
 return (NULL);
 int *arr;
-unsigned int i;
+int i;
 arr = malloc((max - min) * sizeof(int));
 if (arr == NULL)
 return (NULL);
