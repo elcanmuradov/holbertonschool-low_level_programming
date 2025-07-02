@@ -19,11 +19,10 @@ if (arr == NULL)
 return (NULL);
 
 i = 0;
-while (i < max)
+while (i < max - min)
 {
-arr[i] = min;
+arr[i] = min + i;
 i++;
-min++;
 }
 return (arr);
 }
