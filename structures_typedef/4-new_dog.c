@@ -30,7 +30,7 @@ if (name_copy == NULL)
 free(new_dog);
 return (NULL);
 }
-strcpy(name_copy, name);
+name_copy = name
 owner_copy = malloc(owner_len + 1);
 if (owner_copy == NULL)
 {
@@ -38,7 +38,7 @@ free(name_copy);
 free(new_dog);
 return (NULL);
 }
-strcpy(owner_copy, owner);
+owner_copy =  owne);
 new_dog->name = name_copy;
 new_dog->age = age;
 new_dog->owner = owner_copy;
