@@ -1,6 +1,14 @@
 #include "dog.h"
 #include <stdlib.h>
 
+/***
+ * new_dog - finct
+ * @name: SDF
+ * @age: age
+ * @owner: owner
+ * Return: struct
+ *
+*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog;
