@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 
-/***
+/**
  * new_dog - finct
  * @name: SDF
  * @age: age
