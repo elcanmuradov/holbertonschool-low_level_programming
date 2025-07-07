@@ -12,9 +12,9 @@ int result;
 
 if ((num1 >= 0 && num1 <= 9) && (num2 >= 0 && num2 <= 9))
 {
-if (opn == '+' || opn == '-' || opn == '*' || opn == '/' || opn == '%')
+if (opn == "+" || opn == "-" || opn == "*" || opn == "/" || opn == "%")
 {
-if((opn != '/' || opn != '%') && num2 != 0)
+if((opn != "/" || opn != "%") && num2 != 0)
 {
 function = get_op_func(opn);
 result = function(num1, num2);
