@@ -1,13 +1,20 @@
 #include "function_pointers.h"
 
 /**
- *
+ * int_index - funct1
+ * @array: array
+ * @size: size
+ * @cmp: funct
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
 int i = 0;
 int result;
+if (array == NULL || size == NULL || action == NULL)
+{
+return (-1);
+}
 while (i < size)
 {
 result = cmp(array[i]);
