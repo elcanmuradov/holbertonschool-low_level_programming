@@ -17,7 +17,7 @@ int (*function)(int, int);
 if (argc != 4)
 {
 printf("Error\n");
-exit(97);
+exit(98);
 }
 
 num1 = atoi(argv[1]);
