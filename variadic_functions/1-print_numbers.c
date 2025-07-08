@@ -18,16 +18,15 @@ separator = "";
 }
 while (i < n)
 {
-if (i != n - 1)
+if (i != n - 1 && i != n)
 {
 printf("%d%s", va_arg(args, int), separator);
 }
 else
 {
-printf("%d", va_arg(args, int));
+printf("%d\n", va_arg(args, int));
 }
 i++;
 }
-printf('\n');
 va_end(args);
 }
