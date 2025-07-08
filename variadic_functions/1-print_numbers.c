@@ -18,12 +18,12 @@ while (i < n)
 if (i != n - 1)
 {
 printf("%d%s", va_arg(args, int), separator);
-i++;
 }
 else
 {
 printf("%d", va_arg(args, int));
 }
+i++;
 }
 va_end(args);
 }
