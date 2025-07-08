@@ -22,7 +22,7 @@ i++;
 }
 else
 {
-printf("%d", va_arg(args, int);
+printf("%d", va_arg(args, int));
 }
 }
 va_end(args);
