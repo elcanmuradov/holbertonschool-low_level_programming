@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-
+#include <stdio.h>
 /**
  * print_numbers - Print the numbers
  * @separator: sep
@@ -15,7 +15,7 @@ va_start(args, n);
 
 while (i < n)
 {
-printf("%d%c", va_arg(args, int), separator);
+printf("%d%s", va_arg(args, int), separator);
 }
 va_end(args);
 }
