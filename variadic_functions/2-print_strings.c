@@ -3,7 +3,9 @@
 #include <stdio.h>
 
 /**
- * 
+ * print_strings - funct
+ * @separator: sep
+ * @n: count
 */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -25,11 +27,11 @@ while (i < n)
 {
 if (i != n - 1)
 {
-printf("%s%s", va_arg(args, char), separator);
+printf("%s%s", va_arg(args, char *), separator);
 }
 else
 {
-printf("%s\n", va_arg(args, char));
+printf("%s\n", va_arg(args, char *));
 }
 i++;
 }
