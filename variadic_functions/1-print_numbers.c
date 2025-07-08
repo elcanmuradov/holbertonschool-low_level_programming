@@ -14,7 +14,7 @@ va_list args;
 va_start(args, n);
 if (separator == NULL)
 {
-separator = ""
+separator = "";
 }
 while (i < n)
 {
