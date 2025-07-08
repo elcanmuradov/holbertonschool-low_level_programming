@@ -21,7 +21,7 @@ printf("%d%s", va_arg(args, int), separator);
 }
 else
 {
-printf("%d", va_arg(args, int));
+printf("%d\n", va_arg(args, int));
 }
 i++;
 }
