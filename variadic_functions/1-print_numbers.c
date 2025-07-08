@@ -16,6 +16,7 @@ va_start(args, n);
 while (i < n)
 {
 printf("%d%s", va_arg(args, int), separator);
+i++;
 }
 va_end(args);
 }
