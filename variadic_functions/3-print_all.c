@@ -7,10 +7,12 @@ void print_all(const char * const format, ...)
 {
 unsigned int size= 0;
 unsigned int i = 0;
+char *str;
 
 va_list args;
 va_start(args, format);
-while (va_arg(args,char *) != '\0')
+str = va_arg(args, char *);
+while (str[i] != '\0')
 {
 size++;
 }
