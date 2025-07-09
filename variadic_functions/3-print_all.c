@@ -19,7 +19,7 @@ i = 0;
 separator = "";
 while (format && format[i])
 {
-printf("%s",seperator);
+printf("%s",separator);
 switch (format[i])
 {
 case 'c':
@@ -43,7 +43,7 @@ printf("(nil)");
 separator = ", ";
 break;
 default:
-seperator = "";
+separator = "";
 break;
 }
 i++;
