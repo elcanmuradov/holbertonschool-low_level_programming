@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <stdio.h>
 #include "variadic_functions.h"
 
@@ -12,7 +13,7 @@ while (args[size] != '\0')
 {
 size++;
 }
-printf("%d", size);
+printf("%d - %d", size, i);
 
 va_end(args);
 }
