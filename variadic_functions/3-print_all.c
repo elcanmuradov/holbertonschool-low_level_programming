@@ -19,7 +19,7 @@ i = 0;
 separator = "";
 while (format && format[i])
 {
-printf("%s",separator);
+printf("%s", separator);
 switch (format[i])
 {
 case 'c':
