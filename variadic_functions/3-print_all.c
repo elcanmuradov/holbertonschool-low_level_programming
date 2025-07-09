@@ -16,7 +16,7 @@ while (str[i] != '\0')
 {
 size++;
 }
-printf("%d - %d", size, i);
+printf("%u - %u", size, i);
 
 va_end(args);
 }
