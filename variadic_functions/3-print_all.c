@@ -36,7 +36,7 @@ separator = ", ";
 break;
 case 's':
 str = va_arg(args, char *);
-if (st
+if (str)
 printf("%s", str);
 if (!str)
 printf("(nil)");
