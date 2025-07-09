@@ -10,7 +10,7 @@ unsigned int i = 0;
 
 va_list args;
 va_start(args, format);
-while (args[size] != '\0')
+while (va_arg(args, format) != '\0')
 {
 size++;
 }
