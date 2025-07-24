@@ -9,18 +9,13 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-struct dlistint_t* temp = head;
+struct dlistint_t* temp = h;
 int i = 0;
-if (head == NULL)
-{
-return (0);
-}
 while (temp != NULL)
 {
 printf("%d/n", temp->data);
 temp = temp->next;
 i++;
 }
-printf("\n");
 return (i);
 }
