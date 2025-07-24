@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stddef.h>
 /**
  * print_dlistint - funct
  * Return: void or size 
@@ -8,12 +8,12 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
+struct dlistint_t* temp = head;
 int i = 0;
 if (head == NULL)
 {
 return;
 }
-struct dlistint_t* temp = head;
 while (temp != NULL)
 {
 printf("%d/n", temp->data)
