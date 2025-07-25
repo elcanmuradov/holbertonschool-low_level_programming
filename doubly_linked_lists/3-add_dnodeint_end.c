@@ -2,29 +2,29 @@
 #include <stdlib.h>
 
 /**
- * add_dnodeint_end - funct
- * @head: arg1
- * @n: arg2
- * Return: NULL or arglist
-*/
-
+ * add_dnodeint_end - adds a new node at the end of a dlistint_t list
+ * @head: pointer to pointer of first node
+ * @n: integer value for new node
+ * Return: address of new element or NULL if failed
+ */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-dlistint_t *new_node;
+dlistint_t *new_node, *last;
 new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)
-{
 return (NULL);
-}
+new_node->n = n;
+new_node->next = NULL;
 if (*head == NULL)
 {
+new_node->prev = NULL;
 *head = new_node;
-return (*head);
+return (new_node);
 }
-while (new_node->next != NULL)
-{
-new_node = new_node->next;
-}
-new_node->n = n;
+last = *head;
+while (last->next != NULL)
+last = last->next;
+last->next = new_node;
+new_node->prev = last;
 return (new_node);
 }
