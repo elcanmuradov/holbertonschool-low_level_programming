@@ -18,13 +18,13 @@ return (NULL);
 }
 if (*head == NULL)
 {
-*head == new_node;
+*head = new_node;
 return (*head);
 }
 while (new_node->next != NULL)
 {
 new_node = new_node->next;
 }
-new_node = new_node->next;
+new_node->next = n;
 return (new_node);
 }
