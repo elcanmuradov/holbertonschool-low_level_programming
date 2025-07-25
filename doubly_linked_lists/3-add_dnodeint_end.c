@@ -25,6 +25,6 @@ while (new_node->next != NULL)
 {
 new_node = new_node->next;
 }
-new_node->next = n;
+new_node->n = n;
 return (new_node);
 }
