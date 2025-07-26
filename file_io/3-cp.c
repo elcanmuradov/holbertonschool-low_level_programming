@@ -2,7 +2,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
 * main - copies the content of a file to another file
 * @argc: argument count
