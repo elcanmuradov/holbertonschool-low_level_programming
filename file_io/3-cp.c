@@ -2,15 +2,6 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <errno.h>
-
-/**
-* main - Copy content of one file to another
-* @ac: argument count
-* @av: argument vector
-*
-* Return: 0 on success, exits with codes 97–100 on error
-*/
 int main(int ac, char **av)
 {
 int fd_from, fd_to;
