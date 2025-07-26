@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
 * main - copies the content of a file to another file
 * @argc: argument count
@@ -35,6 +36,8 @@ r = read(fd_from, buffer, 1024);
 if (r == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+close(fd_from);
+close(fd_to);
 exit(98);
 }
 if (r > 0)
@@ -43,6 +46,8 @@ w = write(fd_to, buffer, r);
 if (w == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+close(fd_from);
+close(fd_to);
 exit(99);
 }
 }
