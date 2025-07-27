@@ -1,5 +1,6 @@
 #include "hash_tables.h"
-
+#include <string.h>
+#include <stdlib.h>
 /**
  * hash_table_set - adds an element to the hash table
  * @ht: the hash table you want to add or update the key/value to
